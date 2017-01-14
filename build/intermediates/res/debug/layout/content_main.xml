@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Enter current acceleration for each axis in m/s^2:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|numberSigned"
+        android:ems="10"
+        android:id="@+id/accelXTextView"
+        android:textSize="16sp"
+        android:hint="x axis acceleration"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|numberSigned"
+        android:ems="10"
+        android:id="@+id/accelYTextView"
+        android:textSize="16sp"
+        android:hint="y axis acceleration"
+        android:layout_below="@+id/accelXTextView"
+        android:layout_alignStart="@+id/accelXTextView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|numberSigned"
+        android:ems="10"
+        android:id="@+id/accelZTextView"
+        android:textSize="16sp"
+        android:hint="z axis acceleration"
+        android:layout_below="@+id/accelYTextView"
+        android:layout_alignStart="@+id/accelYTextView" />
+
+    <TextView
+        android:text="Enter current cadence (rpm):"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/accelZTextView"
+        android:layout_alignStart="@+id/accelZTextView"
+        android:layout_marginTop="19dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/curCadenceTextView"
+        android:hint="decimal rpm"
+        android:textSize="16sp"
+        android:layout_marginLeft="4sp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:text="0.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/avgSpeedTextView"
+        android:textSize="16sp"
+        android:layout_marginLeft="4sp"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:text="km/h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/avgSpeedUnitTextView"
+        android:textSize="16sp"
+        android:layout_marginLeft="4sp"
+        android:layout_alignBaseline="@+id/avgSpeedTextView"
+        android:layout_alignBottom="@+id/avgSpeedTextView"
+        android:layout_toEndOf="@+id/avgSpeedTextView" />
+
+    <TextView
+        android:text="km/h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/curSpeedUnitTextView"
+        android:textSize="16sp"
+        android:layout_marginLeft="4sp"
+        android:layout_alignBaseline="@+id/curSpeedTextView"
+        android:layout_alignBottom="@+id/curSpeedTextView"
+        android:layout_toEndOf="@+id/curSpeedTextView" />
+
+    <TextView
+        android:text="km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/distUnitTextView"
+        android:textSize="16sp"
+        android:layout_marginLeft="4sp"
+        android:layout_alignBaseline="@+id/distTextView"
+        android:layout_alignBottom="@+id/distTextView"
+        android:layout_toEndOf="@+id/distTextView" />
+
+    <TextView
+        android:text="0.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/avgCadenceTextView"
+        android:textSize="16sp"
+        android:layout_marginLeft="4sp"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_toEndOf="@+id/textView18" />
+
+    <TextView
+        android:text="rpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rpm"
+        android:textSize="16sp"
+        android:layout_marginLeft="4sp"
+        android:layout_alignBaseline="@+id/avgCadenceTextView"
+        android:layout_alignBottom="@+id/avgCadenceTextView"
+        android:layout_toEndOf="@+id/avgCadenceTextView" />
+
+    <TextView
+        android:text="0.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/distTextView"
+        android:layout_marginLeft="4sp"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/textView18"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_toEndOf="@+id/textView18" />
+
+    <TextView
+        android:text="Distance traveled:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textView18"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_below="@+id/textView17"
+        android:layout_alignStart="@+id/textView17" />
+
+    <TextView
+        android:text="Average cadence:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView19"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_below="@+id/textView18"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:text="Average speed:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/distBtn"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:text="Current speed:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <Button
+        android:text="Update Data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/distBtn"
+        android:background="#e52828"
+        android:textColor="#ffffff"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/curCadenceTextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="0.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/curSpeedTextView"
+        android:textSize="16sp"
+        android:layout_marginLeft="4sp"
+        android:layout_above="@+id/textView18"
+        android:layout_toEndOf="@+id/textView17" />
+</RelativeLayout><!-- From: file:/C:/Users/Ra/Documents/Android/SimpleControls/res/layout/content_main.xml -->

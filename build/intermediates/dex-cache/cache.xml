@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Ra\Documents\Android\SimpleControls\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4a6be13368bb64c5a0b0460632d228a1a915f58f">
+        <dex dex="C:\Users\Ra\Documents\Android\SimpleControls\build\intermediates\pre-dexed\debug\android-support-v4-60fd56136539d228b40e5b3f9f897657c16d6ee9.jar" />
+    </item>
+
+</items>
